@@ -221,7 +221,7 @@ async deletePost(postId) {
 
 
 }
-const Supabase = new SupabaseAuth(config);
+export const Supabase = new SupabaseAuth(config);
 
 
 
