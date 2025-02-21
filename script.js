@@ -1,6 +1,6 @@
 const config = {
-  url: 'https://htdgrfrykkpftvpfucby.supabase.co',
-  key: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0ZGdyZnJ5a2twZnR2cGZ1Y2J5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAxMjMwOTMsImV4cCI6MjA1NTY5OTA5M30.OL8MrCypni4qI2LswKvQcxWiX_dM7R1Ome6ARQT18es',
+  url: 'write project url ',
+  key: 'wtite project key',
 };
 
 class SupabaseAuth {
