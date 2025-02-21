@@ -3,7 +3,7 @@ const config = {
   key: 'wtite project key',
 };
 
-class SupabaseAuth {
+class Supabase {
   constructor(config) {
     this.client = supabase.createClient(config.url, config.key);
     this.auth = this.client.auth;
@@ -221,7 +221,7 @@ async deletePost(postId) {
 
 
 }
-export const Supabase = new SupabaseAuth(config);
+export default Supabase;
 
 
 
