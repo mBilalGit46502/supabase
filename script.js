@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 
-export class Supabase {
+ class Supabase {
   constructor(config) {
     this.client = createClient(config.url, config.key);
     this.auth = this.client.auth;
@@ -216,3 +216,5 @@ async deletePost(postId) {
   };
 }
 }
+
+export { Supabase }; 
