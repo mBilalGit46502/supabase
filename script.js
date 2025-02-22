@@ -217,4 +217,4 @@ async deletePost(postId) {
 }
 }
 
-export { Supabase }; 
+export default Supabase ; 
