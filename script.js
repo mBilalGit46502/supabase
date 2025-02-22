@@ -1,7 +1,8 @@
+import { createClient } from '@supabase/supabase-js';
 
 export class Supabase {
   constructor(config) {
-    this.client = supabase.createClient(config.url, config.key);
+    this.client = createClient(config.url, config.key);
     this.auth = this.client.auth;
     this.storage = this.client.storage;
   }
