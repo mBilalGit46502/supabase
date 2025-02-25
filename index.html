@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Post System</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-
 <body>
-  
-  
+    <div class="container">
+        <h1>Supabase Post App</h1>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script type="module" src="script.js"></script>
+        <!-- Add Post Form -->
+        <form id="postForm">
+            <input type="text" id="title" placeholder="Enter title" required>
+            <textarea id="description" placeholder="Enter description"></textarea>
+            <input type="file" id="fileImage" accept="image/*" required>
+            <button type="submit">Add Post</button>
+        </form>
 
+        <h2>All Posts</h2>
+        <div id="postsContainer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
